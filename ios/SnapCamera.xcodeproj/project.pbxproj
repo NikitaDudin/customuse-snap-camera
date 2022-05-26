@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* SnapCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* SnapCamera.m */; };
-		F4FF95D7245B92E800C19C63 /*  SnapCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  SnapCamera.swift */; };
-
+		D90D68E0283F7ECE00432DBE /* SnapCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D68D9283F7ECE00432DBE /* SnapCamera.swift */; };
+		D90D68E1283F7ECE00432DBE /* SnapCameraProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D68DD283F7ECE00432DBE /* SnapCameraProxy.swift */; };
+		D90D68E2283F7ECE00432DBE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D68DE283F7ECE00432DBE /* CameraView.swift */; };
+		D90D68E3283F7ECE00432DBE /* SnapCameraViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D68DF283F7ECE00432DBE /* SnapCameraViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +27,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libSnapCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSnapCamera.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
-		B3E7B5891CC2AC0600A0062D /* SnapCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapCamera.m; sourceTree = "<group>"; };
+		D90D68D9283F7ECE00432DBE /* SnapCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapCamera.swift; sourceTree = "<group>"; };
+		D90D68DD283F7ECE00432DBE /* SnapCameraProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapCameraProxy.swift; sourceTree = "<group>"; };
+		D90D68DE283F7ECE00432DBE /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		D90D68DF283F7ECE00432DBE /* SnapCameraViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapCameraViewManager.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* SnapCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapCamera-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4FF95D6245B92E800C19C63 /* SnapCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCamera.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +56,11 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
-				F4FF95D6245B92E800C19C63 /* SnapCamera.swift */,
-				B3E7B5891CC2AC0600A0062D /* SnapCamera.m */,
 				F4FF95D5245B92E700C19C63 /* SnapCamera-Bridging-Header.h */,
-
+				D90D68DE283F7ECE00432DBE /* CameraView.swift */,
+				D90D68D9283F7ECE00432DBE /* SnapCamera.swift */,
+				D90D68DD283F7ECE00432DBE /* SnapCameraProxy.swift */,
+				D90D68DF283F7ECE00432DBE /* SnapCameraViewManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,10 +122,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				F4FF95D7245B92E800C19C63 /* SnapCamera.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* SnapCamera.m in Sources */,
-
+				D90D68E2283F7ECE00432DBE /* CameraView.swift in Sources */,
+				D90D68E0283F7ECE00432DBE /* SnapCamera.swift in Sources */,
+				D90D68E1283F7ECE00432DBE /* SnapCameraProxy.swift in Sources */,
+				D90D68E3283F7ECE00432DBE /* SnapCameraViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,11 +238,9 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SnapCamera;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "SnapCamera-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Debug;
 		};
@@ -259,10 +257,8 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SnapCamera;
 				SKIP_INSTALL = YES;
-
 				SWIFT_OBJC_BRIDGING_HEADER = "SnapCamera-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-
 			};
 			name = Release;
 		};
