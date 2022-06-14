@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D90D68E0283F7ECE00432DBE /* SnapCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D68D9283F7ECE00432DBE /* SnapCamera.swift */; };
-		D90D68E1283F7ECE00432DBE /* SnapCameraProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D68DD283F7ECE00432DBE /* SnapCameraProxy.swift */; };
-		D90D68E2283F7ECE00432DBE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90D68DE283F7ECE00432DBE /* CameraView.swift */; };
-		D90D68E3283F7ECE00432DBE /* SnapCameraViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D90D68DF283F7ECE00432DBE /* SnapCameraViewManager.m */; };
+		D91B07562857FAFF00FE3A6F /* SnapCameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B07552857FAFF00FE3A6F /* SnapCameraManager.swift */; };
+		D94322862858039A00A2241B /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94322852858039A00A2241B /* CameraView.swift */; };
+		D9432288285814E900A2241B /* SnapCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9432287285814E900A2241B /* SnapCameraManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +26,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libSnapCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSnapCamera.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D90D68D9283F7ECE00432DBE /* SnapCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapCamera.swift; sourceTree = "<group>"; };
-		D90D68DD283F7ECE00432DBE /* SnapCameraProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapCameraProxy.swift; sourceTree = "<group>"; };
-		D90D68DE283F7ECE00432DBE /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		D90D68DF283F7ECE00432DBE /* SnapCameraViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapCameraViewManager.m; sourceTree = "<group>"; };
+		D91B07552857FAFF00FE3A6F /* SnapCameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCameraManager.swift; sourceTree = "<group>"; };
+		D94322852858039A00A2241B /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		D9432287285814E900A2241B /* SnapCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapCameraManager.m; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* SnapCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnapCamera-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,10 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				F4FF95D5245B92E700C19C63 /* SnapCamera-Bridging-Header.h */,
-				D90D68DE283F7ECE00432DBE /* CameraView.swift */,
-				D90D68D9283F7ECE00432DBE /* SnapCamera.swift */,
-				D90D68DD283F7ECE00432DBE /* SnapCameraProxy.swift */,
-				D90D68DF283F7ECE00432DBE /* SnapCameraViewManager.m */,
+				D91B07552857FAFF00FE3A6F /* SnapCameraManager.swift */,
+				D9432287285814E900A2241B /* SnapCameraManager.m */,
+				D94322852858039A00A2241B /* CameraView.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,10 +119,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D90D68E2283F7ECE00432DBE /* CameraView.swift in Sources */,
-				D90D68E0283F7ECE00432DBE /* SnapCamera.swift in Sources */,
-				D90D68E1283F7ECE00432DBE /* SnapCameraProxy.swift in Sources */,
-				D90D68E3283F7ECE00432DBE /* SnapCameraViewManager.m in Sources */,
+				D94322862858039A00A2241B /* CameraView.swift in Sources */,
+				D9432288285814E900A2241B /* SnapCameraManager.m in Sources */,
+				D91B07562857FAFF00FE3A6F /* SnapCameraManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

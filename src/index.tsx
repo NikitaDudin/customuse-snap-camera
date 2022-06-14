@@ -1,7 +1,8 @@
 import {
+  NativeModules,
+  Platform,
   requireNativeComponent,
   UIManager,
-  Platform,
   ViewStyle,
 } from 'react-native';
 
@@ -11,12 +12,12 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
 
-type SnapCameraProps = {
-  color: string;
+export interface SnapCameraProps {
   style: ViewStyle;
-};
+}
 
-const ComponentName = 'SnapCameraView';
+const ComponentName = 'CameraView';
+const { SnapCameraManager: CameraManager } = NativeModules;
 
 export const SnapCameraView =
   UIManager.getViewManagerConfig(ComponentName) != null
@@ -24,3 +25,33 @@ export const SnapCameraView =
     : () => {
         throw new Error(LINKING_ERROR);
       };
+
+export interface Lense {
+  templateCode?: string;
+  lensUUID?: string;
+  lensId?: string;
+}
+
+export interface SnapCameraManagerProps {
+  getLenses: (cb: (lenses: Lense[]) => void) => void;
+  applyLens: (
+    lensId: string,
+    base64: string,
+    height: number,
+    width: number,
+    recordingEnabled: boolean,
+    watermarkAlpha: number,
+    watermarkBase64: string,
+    watermarkHeight: number,
+    watermarkWidth: number,
+    watermarkTop: number,
+    watermarkRight: number,
+    watermarkBottom: number,
+    watermarkLeft: number
+  ) => void;
+  startRecording: () => void;
+  finishRecording: (cb: (path: string) => void) => void;
+  takePhoto: (cb: (path: string) => void) => void;
+}
+
+export const SnapCameraManager: SnapCameraManagerProps = CameraManager;

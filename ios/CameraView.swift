@@ -8,9 +8,6 @@ import SCSDKCameraKitReferenceSwiftUI
 /// A sample implementation of a minimal SwiftUI view for a CameraKit camera experience.
 public struct CameraView: View {
 
-    /// Relevant state for the view
-    @StateObject private var state = CameraViewState()
-
     /// A controller which manages the camera and lenses stack on behalf of the view
     private var cameraController: CameraController
 

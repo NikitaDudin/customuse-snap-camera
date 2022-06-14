@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
   s.dependency "React-Core"
-  s.dependency "SCSDKCameraKit"
-  s.dependency "SCSDKCameraKitReferenceUI"
-  s.dependency "SCSDKCameraKitReferenceSwiftUI"
+  s.dependency "SCSDKCameraKit", "~> 1.12.0"
+  s.dependency "SCSDKCameraKitReferenceUI", "~> 1.12.0"
+  s.dependency "SCSDKCameraKitReferenceSwiftUI", "~> 1.12.0"
 end
